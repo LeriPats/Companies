@@ -30,9 +30,6 @@ class CarWash:
             customer_thread = threading.Thread(target = self.meet_customer, args = [customer])
             customer_thread.start()
 if __name__ == '__main__':
-    """
-    carwash class
-    """
     Visits = CarWash()
-    Count = 6
-    Visits.customers(Count)
+    COUNT = 6
+    Visits.customers(COUNT)
