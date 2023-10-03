@@ -1,6 +1,8 @@
-
+"""
+testing module
+"""
 import time
-
+import threading
 class CarWash:
     def __init__(self):
         self.customers_count = threading.Semaphore(value = 2)
@@ -17,5 +19,5 @@ class CarWash:
             customer_thread.start()
 if __name__ == '__main__':
     Visits = CarWash()
-    count = 6
+    Count = 6
     Visits.customers(count)
