@@ -1,5 +1,4 @@
-Задание
-import threading
+
 import time
 
 class CarWash:
@@ -7,7 +6,6 @@ class CarWash:
         self.customers_count = threading.Semaphore(value = 2)
 
     def meet_customer(self, customer):
-    
         print(f'\nInvite Customer{customer}')
         self.customers_count.acquire()
 
